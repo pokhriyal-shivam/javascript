@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setcookie(){
+            document.cookie="username....meeee"
+            alert("cookie set");
+        }
+
+        function getcookie(){
+           if(document.cookie.length!=0){
+            alert(document.cookie);
+           }
+           else{
+            alert("no cookies set")
+           }
+        }
+    </script>
+
+
+</head>
+<body>
+    click below to set cookie: <br><br>
+    <button id="set-cookie" onclick="setcookie()">SET COOKIE</button><br><br>
+    click here to get cookie: <br><br>
+    <button id="get-cookie" onclick="getcookie()">GET COOKIE</button> 
+</body>
+</html>
